@@ -1,5 +1,8 @@
 DB_DOCKER_CONTAINER=youtube_postgres_container
 
+# IMPORTANT! please check that in the game model in the CreateSchema
+# the day attribute is set to STRING -> pub day: String -> DONT USE CHRONO FOR day!
+
 install:
 # uncomment and indent
 	cargo install cargo-edit
